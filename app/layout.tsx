@@ -6,8 +6,9 @@ import Navbar from "./components/navbar/Navbar";
 import ClientOnly from "./components/ClientOnly";
 import ContactModal from "./components/modal/ContactModal";
 import Hero from "./components/hero/Hero";
-import Services from "./components/Services";
-import References from "./components/References";
+import Services from "./components/services/Services";
+import References from "./components/references/References";
+import Benefits from "./components/benefits/Benefits";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Hero />
           <Services />
           <References />
+          <Benefits />
           <ContactModal />
         </ClientOnly>
         {children}
