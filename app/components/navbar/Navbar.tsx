@@ -2,15 +2,18 @@
 
 import Button from "../Button";
 import Container from "../Container"
+import ContactModal from "../modal/ContactModal";
 import Logo from "./Logo"
 import UserMenu from "./UserMenu"
 
 const Navbar = () => {
     return (
-        <div className="fixed w-full bg-[#E7EEF8] shadow-sm">
+        <div className="fixed w-full">
             <div className="
             p-4 
             border-b-[1px]
+            bg-[#E7EEF8]
+            shadow-sm
             ">
                 <Container>
                     <div className="
@@ -38,6 +41,7 @@ const Navbar = () => {
                     </div>
                 </Container>
             </div>
+            <ContactModal />
         </div>
     )
 }

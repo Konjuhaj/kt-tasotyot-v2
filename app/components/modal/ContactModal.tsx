@@ -31,8 +31,6 @@ const ContactModal = () => {
                 flex 
                 flex-col 
                 gap-4 
-                relative 
-                top-24 
                 bg-blue-500 
                 rounded-3xl
                 p-6">
@@ -44,7 +42,7 @@ const ContactModal = () => {
                     justify-between
                     ">
                     <Heading
-                        title="Ota Yhteyttä meihin"
+                        title="Ota yhteyttä meihin"
                         center
                     />
                     <div className="
@@ -106,6 +104,7 @@ const ContactModal = () => {
                 <Button
                     label="lähetä viesti"
                     secondary
+                    outline
                     onClick={() => { }} />
             </div>
         </Container>

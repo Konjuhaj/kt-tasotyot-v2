@@ -23,7 +23,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientOnly>
           <Navbar />
-          <ContactModal />
         </ClientOnly>
         {children}
       </body>

@@ -23,30 +23,28 @@ const UserMenu = () => {
 
 
     return (
-        <div className="relative">
+        <div className="relative z-30" >
             <div className="
                 flex   
                 flex-row-reverse md:flex-row
                 items-center 
                 justify-between">
-
-
                 <div
                     onClick={toggleOpen}
                     className="
-                md:hidden
-                p-4
-                md:py-1
-                md:px-2
-                border-[1px]
-                flex
-                flex-row
-                items-center
-                gap-3
-                rounded-full
-                cursor-pointer
-                hover:shadow-md
-                transition
+                    md:hidden
+                    p-4
+                    md:py-1
+                    md:px-2
+                    border-[1px]
+                    flex
+                    flex-row
+                    items-center
+                    gap-3
+                    rounded-full
+                    cursor-pointer
+                    hover:shadow-md
+                    transition
             ">
                     <AiOutlineMenu />
                 </div>
@@ -64,7 +62,8 @@ const UserMenu = () => {
                         <div className="
                     flex 
                     flex-col md:flex-row
-                    cursor-pointer">
+                    cursor-pointer
+                    relative">
                             <>
                                 <MenuItem
                                     onClick={() => { }}
@@ -86,7 +85,6 @@ const UserMenu = () => {
                         </div>
                     </div>
                 )}
-
             </div>
         </div >
     )

@@ -31,7 +31,7 @@ const Button: React.FC<ButtonProps> = ({
                 ${outline ? "text-blue-500" : "text-white"}
                 ${secondary ? "bg-white" : ""}
                 ${secondary ? "border-none" : ""}
-                ${secondary ? "text-blue-600" : ""}
+                ${secondary ? "text-blue-500" : ""}
                 ${small ? "py-1" : "py-2"}
                 ${small ? "px-2" : "px-4"}
                 ${small ? "text-sm" : "text-md"}
