@@ -9,6 +9,7 @@ const Container: React.FC<ContainerProps> = (
 ) => {
     return (
         <div className="
+        relative
         max-w-[2520]
         mx-auto
         xl:px-20

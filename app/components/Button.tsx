@@ -6,7 +6,7 @@ interface ButtonProps {
     outline?: boolean
     secondary?: boolean
     small?: boolean
-    mobile?: boolean
+    customStyling?: string
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
     outline,
     secondary,
     small,
-    mobile
+    customStyling
 }) => {
     return (
         <button
@@ -36,8 +36,8 @@ const Button: React.FC<ButtonProps> = ({
                 ${small ? "px-2" : "px-4"}
                 ${small ? "text-sm" : "text-md"}
                 ${small ? "font-light" : "font-semibold"}
-                ${small ? "border-[1px" : "border-2"}
-                ${mobile ? "md:hidden" : "hidden md:block"}
+                ${small ? "border-[1px]" : "border-2"}
+                ${customStyling}
                 `
             }
         >

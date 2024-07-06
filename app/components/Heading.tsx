@@ -15,11 +15,12 @@ const Heading: React.FC<HeadingProps> = ({
 }) => {
     return (
         <div className={`
+            w-full
             ${center ? "text-center" : "text-left"}
-            ${primary ? "text-black" : "text-white"}
+            ${primary ? "text-neutral-800" : "text-white"}
         
         `}>
-            <div className="text-2xl font-bold">
+            <div className={primary ? "text-6xl md:text-8xl font-normal" : "text-2xl font-bold"}>
                 {title}
             </div>
             <div className="font-light text-neutral-500 mt-2">

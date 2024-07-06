@@ -8,7 +8,7 @@ import UserMenu from "./UserMenu"
 
 const Navbar = () => {
     return (
-        <div className="fixed w-full">
+        <div className="fixed w-full top-0 z-50">
             <div className="
             p-4 
             border-b-[1px]
@@ -28,20 +28,20 @@ const Navbar = () => {
                         <Button
                             onClick={() => { }}
                             label="Ota Yhteyttä"
-                            mobile
                             outline
+                            customStyling="md:hidden"
                         />
                         <UserMenu />
                         <Button
                             onClick={() => { }}
                             label="Ota Yhteyttä"
                             outline
+                            customStyling="hidden md:block"
                         />
 
                     </div>
                 </Container>
             </div>
-            <ContactModal />
         </div>
     )
 }

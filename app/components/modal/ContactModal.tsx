@@ -28,6 +28,7 @@ const ContactModal = () => {
     return (
         <Container>
             <div className="
+                relative
                 flex 
                 flex-col 
                 gap-4 
@@ -102,7 +103,7 @@ const ContactModal = () => {
                 </div>
 
                 <Button
-                    label="lähetä viesti"
+                    label="Lähetä viesti"
                     secondary
                     outline
                     onClick={() => { }} />
