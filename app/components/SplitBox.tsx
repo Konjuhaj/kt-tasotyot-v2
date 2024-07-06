@@ -17,23 +17,25 @@ const SplitBox: React.FC<SplitBoxProps> = ({
     rounded
 }) => {
     return (
-        <div className={`
+        <Container>
+            <div className={`
             flex
             flex-col
             ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}
             items-center
-            justify-center
+            justify-between
             gap-4
-            p-4
-            ${rounded ? "bg-[#E7EEF8] rounded-2xl" : ""}
+            p-6
+            ${rounded ? "bg-[#E7EEF8] rounded-3xl" : ""}
         `}>
-            <Container>
-                {leftChild}
-            </Container>
-            <Container>
-                {rightChild}
-            </Container>
-        </div>
+                <Container>
+                    {leftChild}
+                </Container>
+                <Container>
+                    {rightChild}
+                </Container>
+            </div>
+        </Container>
     );
 }
 

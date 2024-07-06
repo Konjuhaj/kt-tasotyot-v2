@@ -1,14 +1,19 @@
 "use client";
 
 interface ContainerProps {
-    children: React.ReactNode
+    children: React.ReactNode,
+    bottomMargin?: boolean
 }
 
-const Container: React.FC<ContainerProps> = (
-    { children }
+const Container: React.FC<ContainerProps> = ({
+    children,
+    bottomMargin = true
+
+}
 ) => {
     return (
-        <div className="
+        <div className={`
+        ${bottomMargin ? "mb-10" : ""}
         relative
         max-w-[2520]
         mx-auto
@@ -16,7 +21,8 @@ const Container: React.FC<ContainerProps> = (
         md:px-10
         sm:px-2
         px-4
-        ">
+        `}
+        >
             {children}
         </div>
     )

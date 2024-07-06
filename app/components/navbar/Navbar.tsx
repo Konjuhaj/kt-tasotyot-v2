@@ -15,7 +15,9 @@ const Navbar = () => {
             bg-[#E7EEF8]
             shadow-sm
             ">
-                <Container>
+                <Container
+                    bottomMargin={false}
+                >
                     <div className="
                         flex
                         flex-row
