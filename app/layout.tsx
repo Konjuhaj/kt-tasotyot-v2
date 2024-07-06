@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import ClientOnly from "./components/ClientOnly";
 import ContactModal from "./components/modal/ContactModal";
 import Hero from "./components/hero/Hero";
+import Services from "./components/Services";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ClientOnly>
           <Navbar />
           <Hero />
+          <Services />
           <ContactModal />
         </ClientOnly>
         {children}

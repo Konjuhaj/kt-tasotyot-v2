@@ -19,13 +19,14 @@ const BulletPoint: React.FC<BulletPointProps> = ({
             ${small ? "flex-row" : "flex-col"}
             items-start
             justify-between
-            gap-1
+            gap-5
+            text-neutral-600
         `}>
             <Icon
                 size={32}
             />
             <div className="
-                text-neutral-800
+
                 text-xl
                 font-medium
             ">

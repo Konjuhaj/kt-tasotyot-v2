@@ -7,6 +7,7 @@ import BulletPoint from "../BulletPoint";
 import { FaArrowRight, FaCheckCircle, FaRegLightbulb, FaRocket } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Button from "../Button";
+import Spacer from "../Spacer";
 
 
 const Hero = () => {
@@ -63,7 +64,7 @@ const Hero = () => {
                                 label="Taatua laatua jokaisessa projektissa"
                             />
                         </div>
-                        <div className="m-4"></div>
+                        <Spacer />
                         <Button
                             label="Pyydä Tarjous"
                             onClick={() => { }}
