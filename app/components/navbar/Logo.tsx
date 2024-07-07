@@ -2,7 +2,7 @@
 
 const Logo = () => {
     return (
-        <div className="font-bold">KT-Tasotyot Oy</div>
+        <div className="font-bold">KT-Tasotyöt Oy</div>
     )
 }
 

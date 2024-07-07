@@ -1,11 +1,10 @@
 "use client"
 
-import SplitBox from "./SplitBox"
-import Heading from "./Heading"
-import BulletPoint from "./BulletPoint"
+import SplitBox from "../SplitBox"
+import Heading from "../Heading"
+import BulletPoint from "../BulletPoint"
 import { FaArrowRight, FaCog, FaLightbulb, FaLocationArrow, FaMailBulk } from "react-icons/fa"
-import Spacer from "./Spacer"
-import { CiMail } from "react-icons/ci"
+import Spacer from "../Spacer"
 
 const Services = () => {
     return (

@@ -1,10 +1,10 @@
 "use client"
 
-import Button from "./Button";
-import Company from "./Company";
-import Heading from "./Heading";
-import Spacer from "./Spacer";
-import SplitBox from "./SplitBox";
+import Button from "../Button";
+import Company from "../Company";
+import Heading from "../Heading";
+import Spacer from "../Spacer";
+import SplitBox from "../SplitBox";
 
 const References = () => {
     return (
