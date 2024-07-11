@@ -24,7 +24,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
         resetTimeout();
         timeoutRef.current = setTimeout(() => {
             setIndex(() => {
-                return index === slides.length - 1 ? 0 : index + 1;
+                return index >= slides.length - 1 ? 0 : index + 1;
             })
         }, 2500);
         return () => {
@@ -44,16 +44,16 @@ const Slideshow: React.FC<SlideshowProps> = ({
                     flex-row
                     overflow-hidden
                     `}>
-                    {slides.map((slide, index) => (
+                    {slides.map((slide, idx) => (
                         <div
-                            key={index}
+                            key={idx}
                             className={`
                                 inline-block
                                 transition
-                                transform
                                 duration-1000
-                                translate-x-[-${index * 100}%]
+                                translate
                                 `}
+                            style={{ transform: `translateX(${-index * 100}%)` }}
                         >
                             {slide}
                         </div>
