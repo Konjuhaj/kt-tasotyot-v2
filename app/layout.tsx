@@ -9,7 +9,7 @@ import Hero from "./components/hero/Hero";
 import Services from "./components/services/Services";
 import References from "./components/references/References";
 import Benefits from "./components/benefits/Benefits";
-import Showcase from "./components/Showcase";
+import Showcase from "./components/showcase/Showcase";
 import Testimony from "./components/slideshow/Testimony";
 
 const inter = Inter({ subsets: ["latin"] });

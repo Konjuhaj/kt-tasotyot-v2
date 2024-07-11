@@ -1,11 +1,9 @@
 "use client"
 
-import Image from "next/image";
 import Container from "../Container";
 import Heading from "../Heading";
 import BulletPoint from "../BulletPoint";
-import { FaArrowRight, FaCheckCircle, FaRegLightbulb, FaRocket } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import { FaCheckCircle, FaRegLightbulb, FaRocket } from "react-icons/fa";
 import Button from "../Button";
 import Spacer from "../Spacer";
 
