@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Button from "../Button";
 import Container from "../Container"
 import ContactModal from "../modal/ContactModal";
@@ -7,6 +8,7 @@ import Logo from "./Logo"
 import UserMenu from "./UserMenu"
 
 const Navbar = () => {
+    const router = useRouter();
     return (
         <div className="fixed w-full top-0 z-50">
             <div className="
@@ -28,14 +30,14 @@ const Navbar = () => {
                     ">
                         <Logo />
                         <Button
-                            onClick={() => { }}
+                            onClick={() => router.push("/#contact")}
                             label="Ota Yhteyttä"
                             outline
                             customStyling="md:hidden"
                         />
                         <UserMenu />
                         <Button
-                            onClick={() => { }}
+                            onClick={() => router.push("/#contact")}
                             label="Ota Yhteyttä"
                             outline
                             customStyling="hidden md:block"

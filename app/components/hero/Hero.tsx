@@ -6,10 +6,11 @@ import BulletPoint from "../BulletPoint";
 import { FaCheckCircle, FaRegLightbulb, FaRocket } from "react-icons/fa";
 import Button from "../Button";
 import Spacer from "../Spacer";
+import { useRouter } from "next/navigation";
 
 
 const Hero = () => {
-
+    const router = useRouter();
     return (
         <div
             className="
@@ -64,7 +65,7 @@ const Hero = () => {
                         <Spacer />
                         <Button
                             label="Pyydä Tarjous"
-                            onClick={() => { }}
+                            onClick={() => router.push("/#contact")}
                         />
                     </div>
 

@@ -4,11 +4,12 @@ import { useCallback, useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import MenuItem from "../MenuItem";
 import useScreenSize from "@/app/hooks/useScreenSize";
-import Button from "../Button";
+import { useRouter } from "next/navigation";
 
 const UserMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const screenSize = useScreenSize();
+    const router = useRouter();
 
     const toggleOpen = useCallback(() => {
         setIsOpen(value => !value)
@@ -66,11 +67,11 @@ const UserMenu = () => {
                     relative">
                             <>
                                 <MenuItem
-                                    onClick={() => { }}
+                                    onClick={() => router.push("/")}
                                     title="Koti"
                                 />
                                 <MenuItem
-                                    onClick={() => { }}
+                                    onClick={() => router.push("/palvelut")}
                                     title="Palvelut"
                                 />
                                 <MenuItem

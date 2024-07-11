@@ -1,11 +1,13 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Button from "../Button";
 import Container from "../Container";
 import Heading from "../Heading";
 import MenuItem from "../MenuItem";
 
 const Footer = () => {
+    const router = useRouter();
     return (
         <div className="
             bg-[#E7EEF8]">
@@ -33,11 +35,11 @@ const Footer = () => {
                         justify-between
                         basis-1/4">
                         <MenuItem
-                            onClick={() => { }}
+                            onClick={() => router.push("/")}
                             title="Koti"
                         />
                         <MenuItem
-                            onClick={() => { }}
+                            onClick={() => router.push("/palvelut")}
                             title="Palvelut"
                         />
                         <MenuItem
@@ -50,7 +52,7 @@ const Footer = () => {
                         />
                     </div>
                     <Button
-                        onClick={() => { }}
+                        onClick={() => router.push("/#contact")}
                         label="Ota Yhteyttä"
                         outline />
                 </div>

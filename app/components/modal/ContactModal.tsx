@@ -27,7 +27,9 @@ const ContactModal = () => {
 
     return (
         <Container>
-            <div className="
+            <div
+                id="contact"
+                className="
                 relative
                 flex 
                 flex-col 
