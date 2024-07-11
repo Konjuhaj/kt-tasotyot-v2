@@ -18,7 +18,7 @@ const Benefits = () => {
             ">
                 <Heading
                     title="Tärkeimät edut"
-                    primary
+                    secondary
                     center
                 />
                 <Spacer />

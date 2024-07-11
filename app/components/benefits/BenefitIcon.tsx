@@ -25,6 +25,7 @@ const BenefitIcon: React.FC<BenefitIconProps> = ({
                 subtitle={subtitle}
                 secondary
                 center
+                size="text-2xl font-semibold"
             />
         </div>
     );

@@ -59,6 +59,7 @@ const Services = () => {
                             title="Asuinrakentamisen ratkaisut"
                             subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
                             secondary
+                            size="text-2xl font-semibold"
                         />
                     </div>
                     <div className="
@@ -76,6 +77,7 @@ const Services = () => {
                             title="Asuinrakentamisen ratkaisut"
                             subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
                             secondary
+                            size="text-2xl font-semibold"
                         />
                     </div>
                     <div className="
@@ -92,6 +94,7 @@ const Services = () => {
                             title="Asuinrakentamisen ratkaisut"
                             subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
                             secondary
+                            size="text-2xl font-semibold"
                         />
                     </div>
                     <div className="
@@ -110,6 +113,7 @@ const Services = () => {
                             title="Asuinrakentamisen ratkaisut"
                             subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
                             secondary
+                            size="text-2xl font-semibold"
                         />
                     </div>
 

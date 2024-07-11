@@ -5,7 +5,8 @@ interface HeadingProps {
     primary?: boolean;
     secondary?: boolean;
     subtitle?: string;
-    center?: boolean
+    center?: boolean;
+    size?: string;
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -13,7 +14,8 @@ const Heading: React.FC<HeadingProps> = ({
     primary,
     secondary,
     subtitle,
-    center
+    center,
+    size
 }) => {
     return (
         <div className={`
@@ -22,7 +24,8 @@ const Heading: React.FC<HeadingProps> = ({
             ${primary || secondary ? "text-neutral-800" : "text-white"}        
         `}>
             <div className={`
-                ${primary ? "text-6xl md:text-8xl font-normal" : "text-2xl font-bold"}
+                ${size ? size
+                    : primary ? "text-6xl md:text-8xl font-normal" : "text-4xl font-bold"}
                 `}>
                 {title}
             </div>
