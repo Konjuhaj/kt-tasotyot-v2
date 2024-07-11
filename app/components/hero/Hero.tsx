@@ -14,7 +14,7 @@ const Hero = () => {
         <div
             className="
                 mb-8
-                h-[80%] md:h-screen
+                h-screen
                 bg-hero-image
                 bg-no-repeat
                 bg-cover

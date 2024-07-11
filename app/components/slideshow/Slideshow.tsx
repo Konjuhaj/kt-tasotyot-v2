@@ -44,15 +44,16 @@ const Slideshow: React.FC<SlideshowProps> = ({
                     flex-row
                     overflow-hidden
                     `}>
-                    {slides.map((slide, idx) => (
+                    {slides.map((slide, index) => (
                         <div
-                            key={idx}
+                            key={index}
                             className={`
                                 transform
                                 inline-block
                                 transition
                                 duration-1000
-                                translate-x-[-${index * 100}%]`}
+                                translate-x-[-${index * 100}%]
+                                `}
                         >
                             {slide}
                         </div>
