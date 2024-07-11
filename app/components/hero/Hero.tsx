@@ -14,13 +14,12 @@ const Hero = () => {
         <div
             className="
                 mb-8
-                h-screen
+                h-[75%] md:h-screen
                 bg-hero-image
                 bg-no-repeat
                 bg-cover
                 grid
-                items-center
-                md:items-end
+                items-end
                 "
         >
             <Container>

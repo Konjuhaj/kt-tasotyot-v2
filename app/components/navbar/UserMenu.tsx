@@ -2,7 +2,7 @@
 
 import { useCallback, useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import MenuItem from "./MenuItem";
+import MenuItem from "../MenuItem";
 import useScreenSize from "@/app/hooks/useScreenSize";
 import Button from "../Button";
 
