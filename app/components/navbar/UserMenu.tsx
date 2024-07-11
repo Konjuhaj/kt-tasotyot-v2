@@ -12,8 +12,10 @@ const UserMenu = () => {
     const router = useRouter();
 
     const toggleOpen = useCallback(() => {
-        setIsOpen(value => !value)
-    }, [])
+        if (screenSize.width < 768) {
+            setIsOpen(value => !value)
+        }
+    }, [screenSize.width])
 
 
     useEffect(() => {
@@ -67,19 +69,31 @@ const UserMenu = () => {
                     relative">
                             <>
                                 <MenuItem
-                                    onClick={() => router.push("/")}
+                                    onClick={() => {
+                                        toggleOpen()
+                                        router.push("/")
+                                    }}
                                     title="Koti"
                                 />
                                 <MenuItem
-                                    onClick={() => router.push("/palvelut")}
+                                    onClick={() => {
+                                        toggleOpen()
+                                        router.push("/palvelut")
+                                    }}
                                     title="Palvelut"
                                 />
                                 <MenuItem
-                                    onClick={() => router.push("referenssit")}
+                                    onClick={() => {
+                                        toggleOpen()
+                                        router.push("referenssit")
+                                    }}
                                     title="Referenssit"
                                 />
                                 <MenuItem
-                                    onClick={() => router.push("/#benefits")}
+                                    onClick={() => {
+                                        toggleOpen()
+                                        router.push("/#benefits")
+                                    }}
                                     title="Edut"
                                 />
                             </>

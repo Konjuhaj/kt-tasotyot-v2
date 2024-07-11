@@ -48,9 +48,9 @@ const Slideshow: React.FC<SlideshowProps> = ({
                         <div
                             key={index}
                             className={`
-                                transform
                                 inline-block
                                 transition
+                                transform
                                 duration-1000
                                 translate-x-[-${index * 100}%]
                                 `}
