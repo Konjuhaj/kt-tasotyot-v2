@@ -19,12 +19,11 @@ const Footer = () => {
                 gap-3
                 p-6">
                     <div className="basis-2/4">
-
                         <Heading
                             title="Rakentamisen asiantuntijat"
                             subtitle="Poikkeuksellisten rakennuspalvelujen toimittaminen ajallaan."
+                            centerMobile
                             secondary
-                            center
                         />
                     </div>
                     <div className="
@@ -55,6 +54,14 @@ const Footer = () => {
                         label="Ota Yhteyttä"
                         outline />
                 </div>
+                <div className="
+                    flex
+                    flex-col
+                    w-full
+                    text-center md:text-start
+                    pb-6
+                    px-4
+                ">© Kaikki oikeudet pidätetään. rakennusalan asiantuntijoiden tekemä</div>
             </Container>
         </div>
     );

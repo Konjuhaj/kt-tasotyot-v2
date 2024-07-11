@@ -59,7 +59,10 @@ const Services = () => {
                             title="Asuinrakentamisen ratkaisut"
                             subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
                             secondary
-                            size="text-2xl font-semibold"
+                            size="
+                            text-2xl
+                            lg:text-xl 
+                            font-semibold"
                         />
                     </div>
                     <div className="
@@ -74,10 +77,13 @@ const Services = () => {
                             size={44}
                         />
                         <Heading
-                            title="Asuinrakentamisen ratkaisut"
-                            subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
+                            title="Mukautetut koontiversiot"
+                            subtitle="Uusimman teknologian hyödyntäminen välittömästi"
                             secondary
-                            size="text-2xl font-semibold"
+                            size="
+                            text-2xl
+                            lg:text-xl 
+                            font-semibold"
                         />
                     </div>
                     <div className="
@@ -91,10 +97,13 @@ const Services = () => {
                             size={44}
                         />
                         <Heading
-                            title="Asuinrakentamisen ratkaisut"
-                            subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
+                            title="Saneerauspalvelut"
+                            subtitle="Uusimman teknologian hyödyntäminen välittömästi"
                             secondary
-                            size="text-2xl font-semibold"
+                            size="
+                            text-2xl
+                            lg:text-xl 
+                            font-semibold"
                         />
                     </div>
                     <div className="
@@ -110,10 +119,13 @@ const Services = () => {
                             size={44}
                         />
                         <Heading
-                            title="Asuinrakentamisen ratkaisut"
-                            subtitle="Kattavat rakennusratkaisut kaikkiin tarpeisiin"
+                            title="Kaupalliset projektit"
+                            subtitle="Turvallisuuden varmistaminen ja aikataulujen noudattaminen"
                             secondary
-                            size="text-2xl font-semibold"
+                            size="
+                            text-2xl
+                            lg:text-xl 
+                            font-semibold"
                         />
                     </div>
 
