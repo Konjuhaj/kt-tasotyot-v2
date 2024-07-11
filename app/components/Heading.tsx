@@ -29,7 +29,7 @@ const Heading: React.FC<HeadingProps> = ({
         `}>
             <div className={`
                 ${size ? size
-                    : primary ? "text-6xl md:text-8xl font-normal" : "text-4xl font-bold"}
+                    : primary ? "text-4xl md:text-8xl font-normal" : "text-4xl font-bold"}
                 `}>
                 {title}
             </div>
