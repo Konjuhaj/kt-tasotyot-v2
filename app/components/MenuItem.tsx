@@ -19,6 +19,7 @@ const MenuItem: React.FC<MeniItemProps> = ({
                 transition
                 font-semibold
                 md:text-slate-600
+                cursor-pointer
             "
         >{title}</div>
     )

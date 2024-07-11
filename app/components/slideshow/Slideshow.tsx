@@ -30,7 +30,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
         return () => {
             resetTimeout();
         }
-    }, [index])
+    }, [index, slides.length])
 
     return (
         <Container>

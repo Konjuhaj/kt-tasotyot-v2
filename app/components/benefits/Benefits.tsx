@@ -9,7 +9,9 @@ import BenefitIcon from "./BenefitIcon";
 const Benefits = () => {
     return (
         <Container>
-            <div className="
+            <div
+                id="benefits"
+                className="
                 flex
                 flex-col
                 items-center

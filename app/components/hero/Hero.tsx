@@ -8,7 +8,6 @@ import Button from "../Button";
 import Spacer from "../Spacer";
 import { useRouter } from "next/navigation";
 
-
 const Hero = () => {
     const router = useRouter();
     return (

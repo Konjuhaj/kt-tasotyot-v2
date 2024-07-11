@@ -28,12 +28,16 @@ const SplitBox: React.FC<SplitBoxProps> = ({
             p-6
             ${rounded ? "bg-[#E7EEF8] rounded-3xl" : ""}
         `}>
-                <Container>
-                    {leftChild}
-                </Container>
-                <Container>
-                    {rightChild}
-                </Container>
+                <div className="basis-2/5">
+                    <Container>
+                        {leftChild}
+                    </Container>
+                </div>
+                <div className="basis-3/5">
+                    <Container>
+                        {rightChild}
+                    </Container>
+                </div>
             </div>
         </Container>
     );

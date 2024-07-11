@@ -43,11 +43,11 @@ const Footer = () => {
                             title="Palvelut"
                         />
                         <MenuItem
-                            onClick={() => { }}
+                            onClick={() => router.push("referenssit")}
                             title="Referenssit"
                         />
                         <MenuItem
-                            onClick={() => { }}
+                            onClick={() => router.push("/#benefits")}
                             title="Edut"
                         />
                     </div>

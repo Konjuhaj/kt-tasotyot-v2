@@ -1,15 +1,16 @@
 "use client";
 
 import { IconType } from "react-icons";
+import { FaArrowRight } from "react-icons/fa";
 
 interface BulletPointProps {
-    icon: IconType,
+    icon?: IconType,
     label: string,
     small?: boolean
 }
 
 const BulletPoint: React.FC<BulletPointProps> = ({
-    icon: Icon,
+    icon: Icon = FaArrowRight,
     label,
     small
 }) => {
@@ -18,21 +19,23 @@ const BulletPoint: React.FC<BulletPointProps> = ({
             flex
             ${small ? "flex-row" : "flex-col"}
             items-start
-            justify-between
+            justify-start
             gap-5
+            mb-2
         `}>
             <Icon
                 size={32}
             />
-            <div className="
-            text-neutral-600
-                text-xl
+            <div className={`
+                text-neutral-600
+                ${small ? "" : "text-xl"}
                 font-medium
-            ">
+            `}
+            >
                 {label}
 
             </div>
-        </div>
+        </div >
     )
 }
 

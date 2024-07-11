@@ -16,6 +16,7 @@ const Services = () => {
                     items-start
                     justify-between
                     gap-3
+                    basis-2/3
                 ">
                     <Heading
                         title="Palvelumme"
@@ -42,14 +43,15 @@ const Services = () => {
             rightChild={(
                 <div className="
                     grid
-                    grid-rows-4 md:grid-rows-2
-                    grid-cols-1 md:grid-cols-2
+                    grid-rows-4 lg:grid-rows-2
+                    grid-cols-1 lg:grid-cols-2
                     gap-4
                 ">
                     <div className="
                         bg-green-100
                         rounded-3xl
                         p-5
+                        min-w-min
                     ">
                         <FaCog
                             className="text-green-600"
@@ -70,6 +72,7 @@ const Services = () => {
                         md:top-5
                         bg-yellow-100
                         rounded-3xl
+                        min-w-min
                         p-5
                     ">
                         <FaMailBulk
@@ -90,6 +93,7 @@ const Services = () => {
                         bg-blue-100
                         rounded-3xl
                         p-5
+                        min-w-min
                         md:h-48
                     ">
                         <FaLightbulb
@@ -112,6 +116,7 @@ const Services = () => {
                         bg-red-100
                         rounded-3xl
                         p-5
+                        min-w-min
                         md:h-52
                     ">
                         <FaLocationArrow

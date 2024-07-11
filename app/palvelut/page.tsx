@@ -1,5 +1,12 @@
+import HeroBlank from "../components/hero/HeroBlank";
+
 export default function Palvelut() {
     return (
-        <div>Palvelut</div>
+        <>
+            <HeroBlank
+                title="Palvelut"
+                buttonLabel="Pyydä kattavan listan palveluista"
+            />
+        </>
     )
 }

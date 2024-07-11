@@ -22,6 +22,7 @@ const Heading: React.FC<HeadingProps> = ({
     return (
         <div className={`
             w-full
+            m-4
             ${center ? "text-center" : "text-left"}
             ${centerMobile ? "text-center md:text-left" : "text-left"}
             ${primary || secondary ? "text-neutral-800" : "text-white"}        
