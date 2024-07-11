@@ -57,7 +57,7 @@ const Slide: React.FC<SlideProps> = ({
                     items-center
                     justify-center
                 ">
-                    "{quote}"
+                    {quote}
                 </div>
             </div>
         </div>
