@@ -23,6 +23,7 @@ const Showcase = () => {
                     h-full md:h-3/5 
                     w-full md:w-3/5 
                     rounded-3xl"
+
                 />
                 <Image
                     alt="Builduing front"
@@ -32,7 +33,8 @@ const Showcase = () => {
                     className="
                     h-full md:h-2/5 
                     w-full md:w-2/5 
-                    rounded-3xl"
+                    rounded-3xl
+                    shadow-sm"
                 />
             </div>
 

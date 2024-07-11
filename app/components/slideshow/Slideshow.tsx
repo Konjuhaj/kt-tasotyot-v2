@@ -26,7 +26,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
             setIndex(() => {
                 return index === slides.length - 1 ? 0 : index + 1;
             })
-        }, 6000);
+        }, 2500);
         return () => {
             resetTimeout();
         }
