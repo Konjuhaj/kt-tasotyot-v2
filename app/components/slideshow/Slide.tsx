@@ -18,15 +18,16 @@ const Slide: React.FC<SlideProps> = ({
     return (
         <div className="
             flex
-            flex-row
+            flex-col-reverse md:flex-row
             items-center
-            justify-around
+            justify-around md:justify-around
             gap-3
             px-6
             py-3
-            w-[95vw]
+            h-full
+            w-[87vw]
         ">
-            <div className="flex flex-col gap-3 items-start">
+            <div className="flex flex-col gap-3 items-center md:items-start">
                 <Image
                     alt="profile picture"
                     src={imgSrc}
@@ -46,10 +47,11 @@ const Slide: React.FC<SlideProps> = ({
                 </div>
             </div>
             <div className="
-            text-2xl
-            font-semibold 
+            text-sm md:text-2xl
+            font-semibold
+            text-center md:text-start
             w-3/4
-            text-black
+            text-neutral-800
             ">
                 <div className="
                     flex
