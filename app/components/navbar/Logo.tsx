@@ -7,7 +7,7 @@ const Logo = () => {
     return (
         <div
             onClick={() => router.push("/")}
-            className="font-bold">
+            className="font-bold cursor-pointer">
             KT-Tasotyöt Oy
         </div>
     )

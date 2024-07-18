@@ -5,10 +5,14 @@ import Heading from "../Heading";
 
 interface ProfilePictureProps {
     imgSrc: string;
+    title: string;
+    subtitle: string;
 }
 
 const ProfilePicture: React.FC<ProfilePictureProps> = ({
-    imgSrc
+    imgSrc,
+    title,
+    subtitle
 }) => {
     return (
         <div className="
@@ -31,8 +35,8 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({
                     hover:shadow-sm"
             />
             <Heading
-                title="Kushtrim Qorri"
-                subtitle="toimitusjohtaja"
+                title={title}
+                subtitle={subtitle}
                 secondary
                 size="text-2xl" />
         </div>

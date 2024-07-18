@@ -21,7 +21,15 @@ const Team = () => {
                 justify-center
                 gap-8">
                     <ProfilePicture
-                        imgSrc="/image.png" />
+                        imgSrc="/image.png"
+                        title="Kushtrim Qorri"
+                        subtitle="Toimitusjohtaja"
+                    />
+                    <ProfilePicture
+                        imgSrc="/image.png"
+                        title="Kujtim Imeri"
+                        subtitle="Operatiivinen johtaja"
+                    />
                 </div>
             </div>
         </Container>

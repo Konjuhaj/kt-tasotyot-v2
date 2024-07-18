@@ -21,59 +21,62 @@ export default function Referenssit() {
                     secondary
                 />
                 <Spacer />
-                <BulletPoint
-                    label="Loimaan Terveystalo, Turun Osuuskauppa"
-                    small
-                />
-                <BulletPoint
-                    label="Varastotilojen palo-osastointi, Turun Osuuskauppa."
-                    small
-                />
-                <Spacer />
-                <Heading
-                    title=""
-                    subtitle="Julkisivukohteet"
-                />
-                <Spacer />
-                <BulletPoint
-                    label="As Oy Puutarhakatu 17"
-                    small
-                />
-                <BulletPoint
-                    label="As Oy Kulmakivi"
-                    small
-                />
-                <hr />
+                <div className="p-4">
 
-                <Heading
-                    title="Projektit 2022"
-                    subtitle="Toimitilat"
-                    secondary
-                />
-                <Spacer />
-                <BulletPoint
-                    label="Loimaan Ykkösapteekki, Turun Osuuskauppa"
-                    small
-                />
-                <BulletPoint
-                    label="Loimaan kalustetukku, Turun Osuuskauppa"
-                    small
-                />
-                <Spacer />
-                <Heading
-                    title=""
-                    subtitle="Julkisivukohteet"
-                />
-                <Spacer />
-                <BulletPoint
-                    label="As Oy Valkoja"
-                    small
-                />
-                <BulletPoint
-                    label="As Oy Hintsa Knaapin katu 8"
-                    small
-                />
+                    <BulletPoint
+                        label="Loimaan Terveystalo, Turun Osuuskauppa"
+                        small
+                    />
+                    <BulletPoint
+                        label="Varastotilojen palo-osastointi, Turun Osuuskauppa."
+                        small
+                    />
+                    <Spacer />
+                    <Heading
+                        title=""
+                        subtitle="Julkisivukohteet"
+                    />
+                    <Spacer />
+                    <BulletPoint
+                        label="As Oy Puutarhakatu 17"
+                        small
+                    />
+                    <BulletPoint
+                        label="As Oy Kulmakivi"
+                        small
+                    />
+                    <hr />
 
+                    <Heading
+                        title="Projektit 2022"
+                        subtitle="Toimitilat"
+                        secondary
+                    />
+                    <Spacer />
+                    <BulletPoint
+                        label="Loimaan Ykkösapteekki, Turun Osuuskauppa"
+                        small
+                    />
+                    <BulletPoint
+                        label="Loimaan kalustetukku, Turun Osuuskauppa"
+                        small
+                    />
+                    <Spacer />
+                    <Heading
+                        title=""
+                        subtitle="Julkisivukohteet"
+                    />
+                    <Spacer />
+                    <BulletPoint
+                        label="As Oy Valkoja"
+                        small
+                    />
+                    <BulletPoint
+                        label="As Oy Hintsa Knaapin katu 8"
+                        small
+                    />
+
+                </div>
                 <hr />
                 <SplitBox
                     leftChild={(

@@ -25,7 +25,7 @@ const Slide: React.FC<SlideProps> = ({
             px-6
             py-3
             h-full
-            w-[87vw]
+            w-[95vw]
         ">
             <div className="flex flex-col gap-3 items-center md:items-start">
                 <Image
@@ -35,8 +35,8 @@ const Slide: React.FC<SlideProps> = ({
                     width={100}
                     className="
                     rounded-full 
-                    h-24 
-                    w-24
+                    h-12 md:h-24 
+                    w-12 md:w-24
                     bg-neutral-100"
                 />
                 <div className="text-xl font-semibold text-neutral-800">

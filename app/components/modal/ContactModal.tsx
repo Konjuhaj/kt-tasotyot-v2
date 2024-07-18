@@ -10,8 +10,13 @@ import {
 } from "react-hook-form"
 import Textarea from "../inputs/Textarea";
 import Button from "../Button";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 const ContactModal = () => {
+
+    const [loading, setLoading] = useState(false);
 
     const {
         register,
@@ -21,9 +26,27 @@ const ContactModal = () => {
         defaultValues: {
             name: "",
             email: "",
-            message: ""
+            message: "",
+            phone: "",
+            company: ""
         }
     })
+
+
+    const onSubmit = (formData: FieldValues) => {
+        setLoading(true);
+        emailjs.send("service_nahmmx7", "template_u71om3r", formData, "MpfqO9jNPGaVqrnjX")
+            .then((res) => {
+                toast.success("Viesti on lähetetty");
+                console.log(res);
+            })
+            .catch((err) => {
+                toast.error("Jonkinlainen ongelma ilmeni. Yritä uudelleen.");
+            })
+            .finally(() => {
+                setLoading(false);
+            })
+    }
 
     return (
         <Container>
@@ -61,14 +84,16 @@ const ContactModal = () => {
                             disabled={false}
                             register={register}
                             errors={errors}
+                            required
                         />
                         <Input
-                            id="sähköposti"
+                            id="email"
                             label="sähköposti"
                             type="email"
                             disabled={false}
                             register={register}
                             errors={errors}
+                            required
                         />
 
                     </div>
@@ -81,26 +106,28 @@ const ContactModal = () => {
                         w-full
                     ">
                         <Input
-                            id="yritys"
+                            id="company"
                             label="Yritys"
                             disabled={false}
                             register={register}
                             errors={errors}
                         />
                         <Input
-                            id="puhelinnumero"
+                            id="phone"
                             label="Puhelinnumero"
                             type="tel"
                             disabled={false}
                             register={register}
                             errors={errors}
+                            required
                         />
                     </div>
                     <Textarea
-                        id="viesti"
+                        id="message"
                         label="Viesti"
                         disabled={false}
                         register={register}
+                        required
                     />
                 </div>
 
@@ -108,7 +135,8 @@ const ContactModal = () => {
                     label="Lähetä viesti"
                     secondary
                     outline
-                    onClick={() => { }} />
+                    disabled={loading}
+                    onClick={handleSubmit(onSubmit)} />
             </div>
         </Container>
     )

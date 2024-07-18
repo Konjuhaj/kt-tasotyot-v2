@@ -1,12 +1,13 @@
 "use client";
 
 interface ButtonProps {
-    label: string,
-    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void,
-    outline?: boolean
-    secondary?: boolean
-    small?: boolean
-    customStyling?: string
+    label: string;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    outline?: boolean;
+    secondary?: boolean;
+    small?: boolean;
+    customStyling?: string;
+    disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,11 +16,13 @@ const Button: React.FC<ButtonProps> = ({
     outline,
     secondary,
     small,
-    customStyling
+    customStyling,
+    disabled
 }) => {
     return (
         <button
             onClick={onClick}
+            disabled={disabled}
             className={`
                 relative
                 rounded-lg
@@ -37,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({
                 ${small ? "text-sm" : "text-md"}
                 ${small ? "font-light" : "font-semibold"}
                 ${small ? "border-[1px]" : "border-2"}
+                ${disabled ? "text-opacity-50" : ""}
                 ${customStyling}
                 `
             }
