@@ -35,12 +35,15 @@ const ContactModal = () => {
 
     const onSubmit = (formData: FieldValues) => {
         setLoading(true);
+        toast.loading("Sending...");
         emailjs.send("service_nahmmx7", "template_u71om3r", formData, "MpfqO9jNPGaVqrnjX")
             .then((res) => {
+                toast.dismiss();
                 toast.success("Viesti on lähetetty");
                 console.log(res);
             })
             .catch((err) => {
+                toast.dismiss();
                 toast.error("Jonkinlainen ongelma ilmeni. Yritä uudelleen.");
             })
             .finally(() => {
